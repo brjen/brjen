@@ -24,6 +24,14 @@ MOODS = {
     "creative": "🎨",
 }
 
+RANDOM_TASKS = [
+    "clear 10 inbox emails",
+    "organize one folder",
+    "write a rough draft",
+    "fix one annoying bug",
+    "review your top 3 priorities",
+]
+
 
 def now() -> str:
     return datetime.now().strftime("%H:%M:%S")
@@ -42,10 +50,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Tiny vibe utility")
     parser.add_argument("--mood", choices=sorted(MOODS), default="focus")
     parser.add_argument("--minutes", type=int, default=10)
+    parser.add_argument("--random-task", action="store_true", help="Pick a random task")
     parser.add_argument("task", nargs="*", help="What you're about to do")
     args = parser.parse_args()
 
-    task = " ".join(args.task).strip() or "something awesome"
+    manual_task = " ".join(args.task).strip()
+    task = random.choice(RANDOM_TASKS) if args.random_task else (manual_task or "something awesome")
     emoji = MOODS[args.mood]
     quote = random.choice(QUOTES)
 
