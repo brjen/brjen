@@ -1,57 +1,42 @@
-# 👋 Hi, I'm Brian
+# Hey, I'm Brian
 
-Welcome to my GitHub profile — a home for my experiments, homelab builds, and DevOps journey.
-
----
-
-## 🛠️ About Me
-
-- 💼 **QA Analyst, Retention Specialist, Tech Support & Cloud Admin (in training)**
-- 🧠 Lifelong tinkerer with a passion for reverse-engineering and understanding systems
-- 🖥️ Obsessed with optimizing networks, servers, and workflows for performance & privacy
-- ☁️ Currently building a self-hosted, private cloud & automation stack using:
-  - **Proxmox VE**
-  - **Ansible + GitOps workflows**
-  - **pfSense, Pi-hole, and pfBlockerNG**
-  - **Immich, Vaultwarden, Jellyfin, Nextcloud & more**
-- 🤖 Collaborating with **ChatGPT** to design, document, and automate the setup across my infrastructure
+I build and operate AI infrastructure on bare metal.
 
 ---
 
-## 📡 Current Homelab Project
+## What I Do
 
-I'm building a fully automated **DevOps-style Proxmox homelab** with self-hosted apps and strong security practices.  
-Check out the [Proxmox Server Setup ("Dave")](https://github.com/brjen/brjen) for detailed architecture.
+I design and run a self-hosted multi-machine estate for AI workloads, enrichment pipelines, observability, and custom tooling.
 
-💡 Goals:
-- Reproducible infrastructure with **Ansible**
-- Automated backups, snapshots, and DNS
-- Clean, local DNS (no `.local` conflicts!)
-- High-performance ZFS storage and temp processing pools
-- Privacy-respecting replacements for common cloud services
+### AI Systems
+Custom render and processing pipelines spanning diffusion models (SDXL, Flux, PixArt), model switching across AMD and NVIDIA GPUs, and multi-tier enrichment using vision models for automated asset analysis and metadata tagging.
 
----
+### Observability & Intelligence
+SQLite-native multi-database architecture: FTS5 knowledge indexing, federated metrics aggregation, real-time change tracking with SHA verification, and agent session instrumentation. No Postgres, no Redis — by design.
 
-## 🔧 Tools & Skills
-
-- 🐧 Linux (Debian/Ubuntu, Arch, Alpine)
-- ☁️ Self-hosting & Networking
-- 🔐 Security hardening (SSH, 2FA, DNS filtering, VPN)
-- ⚙️ Ansible, Git, Docker, pfSense
-- 📜 Bash scripting & automation
+### Infrastructure & Network
+Unbound recursive DNS + AdGuard filtering, VLAN-segmented UniFi networking, Proxmox virtualization, and host operations across Linux systems with systemd.
 
 ---
 
-## 🚧 Always Learning
+## Stack
 
-If you're into DevOps, homelabs, automation, or privacy-first tech — you're in good company.  
-Feel free to fork, contribute, or just hang out and learn with me.
-
-> “If you can't open it, you don't own it.”
+- Multi-host GPU estate: AMD RX 7800 XT, NVIDIA GTX 1080 Ti, Apple Silicon
+- Python, Node.js, Svelte, FastAPI, SQLite
+- Unbound DNS, AdGuard, UniFi, VLAN segmentation
+- Linux, Proxmox VE, systemd
+- Git, SSH, rsync, Fish shell
 
 ---
 
-📬 **Contact:**  
-• GitHub Issues / Discussions  
-• Coming soon: blog or documentation site for my full homelab build
+## Philosophy
 
+I own the stack. Compute, networking, DNS, storage, monitoring, and deployment all run on hardware I control.
+
+If something breaks, I fix it at the root cause. The [PyTorch memory fix](https://github.com/brjen/pytorch-memory-fix) came from weeks of instrumented profiling across a real production workload, tracing the issue to glibc allocator behavior rather than treating it as an application-level bug.
+
+---
+
+## Open Source
+
+- **[pytorch-memory-fix](https://github.com/brjen/pytorch-memory-fix)** — Two environment variables that eliminate PyTorch RSS creep during repeated model load/unload cycles on Linux.
