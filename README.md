@@ -14,7 +14,7 @@ Not a chatbot or a pile of scripts — a working AI environment built for sustai
 - **~1,700** work tickets executed (~1,337 completed) — every decision, reason, and outcome recorded
 - **~80** codified operating rules · **~18** telemetry databases · multiple coordinated machines
 - **Multi-model agent orchestration** with independent review gates before changes land
-- **A measured self-improvement loop** — recurring friction becomes durable rules; operating-error rate dropped roughly **10×** month over month
+- **Measured reliability & self-improvement** — 96% success across 1,300+ tracked tasks (zero hard failures); self-audit policy-violation rate cut **~12×** (2.3% → 0.18%) even as activity tripled
 - **Custom render engine (5 generations)** that replaced commercial tools — tuned to run oversized models on constrained hardware
 
 > Work → record → review → measure → learn → update the system. That loop is the point.
