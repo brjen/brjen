@@ -1,55 +1,60 @@
-# Hey, I'm Brian
+# Hi, I'm Brian 👋
 
-I build and operate AI infrastructure on bare metal — and I run a production business on top of it.
+**I build and operate self-governing AI systems — and I run a production business on top of them.**
 
----
-
-## Gridline Productions
-
-A fully automated commercial AI render operation, built from scratch in roughly a month with no prior rendering or pipeline experience.
-
-The system handles the entire lifecycle: prompt generation, rendering across multiple models, multi-tier quality enrichment, automated scoring and selection, metadata processing, and commercial listing — all with a single click to start.
-
-**By the numbers:**
-- 30,000+ renders produced
-- Fully automated end-to-end: one-click startup, no manual intervention required
-- Self-correcting and self-restarting — if something fails, the system recovers on its own
-- Self-improving — the platform learns from its own operations, surfacing what works and deprioritizing what doesn't
-- Dual control plane with machine-specific fallback agents across a multi-machine estate
-- Custom render engine replacing off-the-shelf tooling entirely
-
-Everything runs on hardware I own. No cloud dependencies for production workloads.
+Self-taught, outcomes-first. Over the past few months I designed and built **Gridline**, a private multi-agent AI operating system: AI agents that work under a shared contract, remember across sessions, review each other's output, measure their own performance, and improve over time. The AI writes the syntax — I architect the system, the governance, and the operating discipline.
 
 ---
 
-## Infrastructure
+## 🧠 Gridline — a self-governing AI operating system
 
-I design and operate a self-hosted multi-machine estate for AI workloads, enrichment pipelines, observability, and automation.
+Not a chatbot or a pile of scripts — a working AI environment built for sustained work at scale.
 
-- **Multi-host GPU compute:** AMD RX 7800 XT, NVIDIA GTX 1080 Ti, Apple Silicon
-- **Networking:** Unbound recursive DNS, AdGuard filtering, VLAN-segmented UniFi
-- **Virtualization & storage:** Proxmox VE, automated backup
-- **Observability:** Real-time dashboards, system-wide queryability, automated anomaly detection with alerting
-- **Operations:** Structured ticketing system with 200+ closed tickets, startup/shutdown verification routines, full audit trail from day one
+- **~49,000** image renders through a fully tracked production pipeline (**~137,000** artifacts under hash-based chain of custody)
+- **~1,700** work tickets executed (~1,337 completed) — every decision, reason, and outcome recorded
+- **~80** codified operating rules · **~18** telemetry databases · multiple coordinated machines
+- **Multi-model agent orchestration** with independent review gates before changes land
+- **A measured self-improvement loop** — recurring friction becomes durable rules; operating-error rate dropped roughly **10×** month over month
+- **Custom render engine (5 generations)** that replaced commercial tools — tuned to run oversized models on constrained hardware
 
----
-
-## Philosophy
-
-I own the stack. Compute, networking, DNS, storage, monitoring, and deployment all run on hardware I control.
-
-If something breaks, I fix it at the root cause. The [PyTorch memory fix](https://github.com/brjen/pytorch-memory-fix) came from weeks of instrumented profiling across a real production workload — tracing the issue to glibc allocator behavior rather than treating it as an application-level bug.
-
-I build systems that are observable, rebuildable, and free of vendor lock-in. Every decision, every fix, and every lesson learned is documented and searchable. The system's institutional memory goes back to day one.
+> Work → record → review → measure → learn → update the system. That loop is the point.
 
 ---
 
-## Stack
+## 🛠️ Infrastructure — bare metal, self-hosted
 
-Python, Node.js, Svelte, FastAPI, SQLite, Linux, Proxmox VE, systemd, Git, SSH, Fish shell
+A multi-machine estate I run end to end:
+
+- **Compute:** AMD RX 7800 XT · NVIDIA GTX 1080 Ti · Apple Silicon
+- **Virtualization:** Proxmox VE
+- **Network:** OPNsense · Unbound recursive DNS · AdGuard Home
+- **Ops:** Docker · systemd · Linux servers · RAID · disk encryption · full observability
+
+Philosophy: own the complete stack, no vendor lock-in. I debug down to the metal — including a PyTorch memory fix derived from production profiling.
 
 ---
 
-## Open Source
+## 🧰 Stack
 
-* **[pytorch-memory-fix](https://github.com/brjen/pytorch-memory-fix)** — Two environment variables that eliminate PyTorch RSS creep during repeated model load/unload cycles on Linux. Zero code changes. Zero performance cost.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Proxmox](https://img.shields.io/badge/Proxmox_VE-E57000?style=flat-square&logo=proxmox&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+---
+
+## 📌 Open source
+
+**[pytorch-memory-fix](https://github.com/brjen/pytorch-memory-fix)** — environment variables that eliminate PyTorch memory creep with zero code changes, derived from real production profiling.
+
+---
+
+## 📫 Open to work
+
+Applied-AI · AI / agent engineering · forward-deployed & solutions engineering · consulting on AI operating systems and agent governance.
+
+**[Portfolio](#) · [LinkedIn](#) · [email]**
