@@ -57,4 +57,4 @@ Philosophy: own the complete stack, no vendor lock-in. I debug down to the metal
 
 Applied-AI · AI / agent engineering · forward-deployed & solutions engineering · consulting on AI operating systems and agent governance.
 
-**[Portfolio](#) · [LinkedIn](#) · [email]**
+**[Portfolio](https://brjen.github.io) · [LinkedIn](https://www.linkedin.com/in/brjen) · [GitHub](https://github.com/brjen)**
